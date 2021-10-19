@@ -24,6 +24,10 @@ body {
   font-family: 'Lato', Tahoma, sans-serif;
 }
 
+.bg-purple {
+  background-color: #242038;
+}
+
 /* For small screen size, make purple menu bar */
 @media only screen and (max-width: 1200px) {
   .navbar{
