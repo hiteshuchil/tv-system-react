@@ -21,19 +21,19 @@ function IndexScreen() {
                       <div className="container">
                           <div className="row justify-content-end">
                               <div className="col-6 homepage-box-col" style={colbugfix}>
-                                  <a className="homepage-box homepage-box1" href="healthclub.html">Health Club</a>
+                                  <a className="homepage-box homepage-box1" href="/facilities">Health Club</a>
                               </div>
                               <div className="col-6 homepage-box-col" style={colbugfix}>
-                                  <a className="homepage-box homepage-box4" href="specialoffers.html">Spa</a>
+                                  <a className="homepage-box homepage-box4" href="/spa">Spa</a>
                               </div>    
                           </div>
                           <div className="row justify-content-end">
                               <div className="col-6 homepage-box-col" style={colbugfix}>
-                                  <a className="homepage-box homepage-box2" href="specialoffers.html">Room Service</a>
+                                  <a className="homepage-box homepage-box2" href="/room-service">Room Service</a>
                                   
                               </div>
                               <div className="col-6 homepage-box-col" style={colbugfix}>
-                                  <a className="homepage-box homepage-box3" href="specialoffers.html">Wifi</a>
+                                  <a className="homepage-box homepage-box3" href="/wifi">Wifi</a>
                               </div>
                           </div>
                       </div>

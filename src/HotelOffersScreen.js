@@ -24,7 +24,7 @@ function HotelOffersScreen() {
 
           <div style={{width: "650px", marginTop: "2rem"}}>
 
-            <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
+            <div id="carouselExampleCaptions" className="carousel slide border" data-bs-ride="carousel">
                 <div className="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -34,8 +34,8 @@ function HotelOffersScreen() {
                   <div className="carousel-item active">
                     <img src={CarouselImage1} className="d-block w-100" alt="..." />
                     <div className="carousel-caption d-none d-md-block">
-                      <h5>Extra Night - 50% Off</h5>
-                      <p>Stay two nights and get an extra night at 50% of the price.</p>
+                      <h5>Buy Two Nights Stay and Get One CSS Course Free</h5>
+                      <p>Relax at our hotel and upskill your CSS knowledge too.</p>
                     </div>
                   </div>
                   <div className="carousel-item">

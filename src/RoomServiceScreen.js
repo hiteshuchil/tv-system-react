@@ -1,34 +1,38 @@
 import React from "react";
-import CardImage1 from './assets/images/spa1.png';
-import CardImage2 from './assets/images/spa2.png';
-import CardImage3 from './assets/images/spa3.png';
-import CardImage4 from './assets/images/spa4.png';
+import CardImage1 from './assets/images/food1.png';
+import CardImage2 from './assets/images/food2.png';
+import CardImage3 from './assets/images/food3.png';
+import CardImage4 from './assets/images/food4.png';
 
 const items = [
   {
     id: 1,
-    name: "1 Hour Facial Massage",
-    price: 300,
+    name: "Full English Breakfast",
+    desc: "Breakfeast fit for a king.",
+    price: 50,
   },
   {
     id: 2,
-    name: "1 Hour Nose Massage",
-    price: 200,
+    name: "Mix Grill",
+    desc: "Grilled and mixed to perfection.",
+    price: 75,
   },
   {
     id: 3,
-    name: "30 min Hot Stone Massage",
-    price: 500,
+    name: "Burger",
+    desc: "Taste's just like McDonalds, at five times the price.",
+    price: 50,
   },
   {
     id: 4,
-    name: "Accupuncture Massage",
-    price: 250,
+    name: "Chicken Shawarma",
+    desc: "Dubai classic - extra garlic sauce, extra pickles included.",
+    price: 25,
   },
 
 ];
 
-const SpaScreen = () => {
+const RoomServiceScreen = () => {
   const [cart, setCart] = React.useState([]);
   const cartTotal = cart.reduce((total, { price = 0 }) => total + price, 0);
 
@@ -74,7 +78,7 @@ const SpaScreen = () => {
                 <div className="container-fluid home-container">
                 <div className="row">
                     <div className="col-12">
-                        <h1 className="welcome mt-3">Welcome to the Spa
+                        <h1 className="welcome mt-3">Order Room Service
                         </h1>
                     </div>
                     <div className="col-12">
@@ -84,10 +88,9 @@ const SpaScreen = () => {
                                 <div className="card card-bg" style={{height: "350px"}}>
                                         <img className="card-img-top" src={CardImage1} alt="Card image cap" />
                                         <div className="card-body">
-                                        <h5 className="card-title">1 Hour Facial Massage</h5>
-                                        <p className="card-text">Enjoy a relaxing clay facial at our spa.<br />
-                                        Price: AED300<br />
-                                        Time: 1 hour</p>
+                                        <h5 className="card-title">{items[0].name}</h5>
+                                        <p className="card-text">{items[0].desc}<br />
+                                        Price: AED {items[0].price}</p>
                                         <div className="d-grid">
                                         {listItemsToBuy().[0]}
                                         </div>
@@ -100,10 +103,9 @@ const SpaScreen = () => {
                                 <div className="card card-bg" style={{height: "350px"}}>
                                         <img className="card-img-top" src={CardImage2} alt="Card image cap" />
                                         <div className="card-body">
-                                        <h5 className="card-title">1 Hour Nose Massage</h5>
-                                        <p className="card-text">Enjoy a nose massage at our spa.<br />
-                                        Price: AED200<br />
-                                        Time: 1 hour</p>
+                                        <h5 className="card-title">{items[1].name}</h5>
+                                        <p className="card-text">{items[1].desc}<br />
+                                        Price: AED {items[1].price}</p>
                                         <div className="d-grid">
                                         {listItemsToBuy().[1]}
                                         </div>
@@ -115,10 +117,9 @@ const SpaScreen = () => {
                                 <div className="card card-bg" style={{height: "350px"}}>
                                         <img className="card-img-top" src={CardImage3} alt="Card image cap" />
                                         <div className="card-body">
-                                        <h5 className="card-title">30 min Hot Stone Massage</h5>
-                                        <p className="card-text">Enjoy burning hot stones on your skin.<br />
-                                        Price: AED500<br />
-                                        Time: 30 mins</p>
+                                        <h5 className="card-title">{items[2].name}</h5>
+                                        <p className="card-text">{items[2].desc}<br />
+                                        Price: AED {items[2].price}</p>
                                         <div className="d-grid">
                                         {listItemsToBuy().[2]}
                                         </div>
@@ -129,11 +130,9 @@ const SpaScreen = () => {
                                 <div className="card card-bg" style={{height: "350px"}}>
                                         <img className="card-img-top" src={CardImage4} alt="Card image cap" />
                                         <div className="card-body">
-                                        <h5 className="card-title">Accupuncture Massage</h5>
-                                        <p className="card-text">No pain, no gain. Be a man!
-                                        <br /><br />
-                                        Price: AED250<br />
-                                        Time: 30 mins</p>
+                                        <h5 className="card-title">{items[3].name}</h5>
+                                        <p className="card-text">{items[3].desc}<br />
+                                        Price: AED {items[3].price}</p>
                                         <div className="d-grid">
                                         {listItemsToBuy().[3]}
                                         </div>
@@ -181,7 +180,7 @@ const SpaScreen = () => {
   );
 };
 
-export default SpaScreen;
+export default RoomServiceScreen;
 
 
 

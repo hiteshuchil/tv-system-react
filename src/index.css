@@ -24,9 +24,7 @@ body {
   font-family: 'Lato', Tahoma, sans-serif;
 }
 
-.bg-purple {
-  background-color: #242038;
-}
+
 
 /* For small screen size, make purple menu bar */
 @media only screen and (max-width: 1200px) {
@@ -145,6 +143,7 @@ margin-right: 30px;
 .homepage-box1 {
   background: #000 url('./assets/images/astrolabs-images.png') no-repeat;
   opacity: 85%;
+  text-shadow: #000 1px 0 10px;
 }
 
 .homepage-box1:hover, .homepage-box2:hover, .homepage-box3:hover, .homepage-box4:hover{
@@ -157,14 +156,17 @@ margin-right: 30px;
 
 .homepage-box2 {
   background: #000 url('./assets/images/astrolabs-images-2.png') no-repeat;
+  text-shadow: #000 1px 0 10px;
 }
 
 .homepage-box3 {
   background: #000 url('./assets/images/astrolabs-images-3.png') no-repeat;
+  text-shadow: #000 1px 0 10px;
 }
 
 .homepage-box4 {
-  background: #000 url('./assets/images/astrolabs-images-4.png') no-repeat;
+  background: #000 url('./assets/images/spa2.png') no-repeat;
+  text-shadow: #000 1px 0 10px;
 }
 
 /* Hotel Info Styles */
@@ -175,5 +177,21 @@ height: 50vh;
 
 .carousel-caption {
 background-color:rgba(0, 0, 0, 0.5);
+}
 
+.card-bg {
+  background-color:rgba(0, 0, 0, 0.3) !important;
+  color: white;
+}
+
+.purple-outline-button {
+  border: 1px solid  #9067C6 !important;
+  background-color:rgba(0, 0, 0, 0.3) !important;
+  color: #CCCCCC !important;
+}
+
+a.purple-outline-button:hover {
+  border: 1px solid  #FFF !important;
+  background-color:rgba(0, 0, 0, 0.3) !important;
+  color: #FFF !important;
 }

@@ -5,6 +5,8 @@ import HotelOffersScreen from "./HotelOffersScreen.js";
 import FacilitiesScreen from "./FacilitiesScreen.js";
 import EntertainmentScreen from "./EntertainmentScreen.js";
 import SpaScreen from "./SpaScreen.js";
+import RoomServiceScreen from "./RoomServiceScreen.js";
+import WifiScreen from "./WifiScreen.js";
 
 function App() {
     return (
@@ -15,6 +17,8 @@ function App() {
                 <LayoutRoute path="/facilities" exact={true} component={FacilitiesScreen} />
                 <LayoutRoute path="/entertainment" exact={true} component={EntertainmentScreen} />
                 <LayoutRoute path="/spa" exact={true} component={SpaScreen} />
+                <LayoutRoute path="/room-service" exact={true} component={RoomServiceScreen} />
+                <LayoutRoute path="/wifi" exact={true} component={WifiScreen} />
             </Switch>
         </BrowserRouter>
     )
